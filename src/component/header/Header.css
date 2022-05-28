@@ -1,0 +1,27 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: #000;
+}
+
+.header__logo{
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.header__contents{
+    position: absolute;
+    right: 10%;
+    display: flex;
+    list-style: none;
+    
+}
+
+.header__contents li{
+    margin: 0px 30px;
+}
