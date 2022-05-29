@@ -8,6 +8,6 @@ services:
       - NODE_ENV=development
     volumes:
       - ./:/usr/src/app
-    command: sh -c "cd myportfolio && npm start"
+    command: sh -c "cd myport && npm start"
     ports:
       - "3000:3000"

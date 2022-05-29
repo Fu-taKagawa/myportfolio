@@ -6,6 +6,7 @@ import App from './App';
 
 import "./component/header/Header.css";
 import "./css/Top.css"
+import "./component/text.css"
 
 const container = document.getElementById("root");
 const root = createRoot(container);

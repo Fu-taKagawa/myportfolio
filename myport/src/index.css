@@ -12,7 +12,37 @@ code {
     monospace;
 }
 
+.sp-only{
+  display: none;
+}
+
+@media screen and (max-width: 767px){
+    .sp-only{
+        display: block;
+    }
+}
+
+.pc-only{
+    display: inline;
+}
+
+@media screen and (max-width: 767px){
+    .pc-only{
+        display: none;
+    }
+}
+
 .bg__green{
   width: 500px;
   background: #179617;
+}
+
+a{
+  font-family: Montserrat;
+  color: #000;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
 }

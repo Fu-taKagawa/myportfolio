@@ -1,3 +1,245 @@
-.TopPage{
-    background: #B9B9B9;
+/* TopPage-top */
+
+.TopPage__top{
+    background-color: #E2E2E2;
+    padding: 50px 0px;
+    height: 550px;
+}
+
+.TopPage__top__bg{
+    position: relative;
+    z-index: 0;
+}
+
+.green__bg-right-top{
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    top: -30px;
+}
+
+.green__bg-right-top img{
+    width: 400px;
+}
+
+.green__bg-left-top{
+    position: absolute;
+    left: 5%;
+    top: 300px;
+    z-index: 0;
+}
+.green__bg-left-top img{
+    width: 500px;
+}
+
+.TopPage__top__catchfrase .catch-frase{
+    width: 550px;
+    position: absolute;
+    z-index: 5;
+    top: 280px;
+    left: 13%;
+}
+
+.catch-shadow{
+    width: 550px;
+    position: absolute;
+    z-index: 0;
+    top: 287px;
+    left: 12.5%;
+}
+
+.TopPage__top__img img{
+    width: 25%;
+    position: absolute;
+    z-index: 5;
+    top: 15%;
+    right: 15%;
+}
+
+
+@media screen and (max-width: 767px){
+    .TopPage__top{
+        background-color: #fff;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .green__bg-sp{
+        position: absolute;
+        top: 280px;
+    }
+
+    .TopPage__top__img img{
+        width: 80%;
+        top: 110px;
+        right: 0;
+    }
+}
+
+
+/* TopPage-about */
+.TopPage__about{
+    width: 88%;
+    position: relative;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.TopPage__about__top-logo{
+    margin-bottom: 50px;
+}
+
+.TopPage__about__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.TopPage__about__content-img{
+    margin: 0 50px;
+}
+
+.TopPage__about__content-img img{
+    width: 350px;
+}
+
+.TopPage__about__content-textbox{
+    text-align: left;
+    margin: 0 50px;
+}
+
+.TopPage__about__content-link{
+    position: absolute;
+    z-index: 5;
+    top: 570px;
+    right: 15%;
+}
+
+.green__bg-right-about{
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    top: 500px;
+}
+.green__bg-right-about img{
+    width: 400px;
+}
+
+@media screen and (max-width: 767px){
+    .TopPage__about__content{
+        display: block;
+    }
+    .TopPage__about__content-img{
+        margin: 0;
+    }
+    .TopPage__about__content-img img{
+        width: 70%;
+    }
+}
+
+/* TopPage-works */
+
+.TopPage__works{
+    width: 88%;
+    position: relative;
+    margin: 140px auto;
+    text-align: center;
+}
+
+.TopPage__works__top-logo{
+    margin-bottom: 50px;
+}
+
+.TopPage__works__content{
+    display: flex;
+    justify-content: center;
+}
+
+.TopPage__works__content-img{
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.TopPage__works__content-img img{
+    width: 450px;
+}
+
+.TopPage__works__content-link{
+    position: absolute;
+    z-index: 5;
+    top: 450px;
+    right: 15%;
+}
+
+.blur img {
+    transition: .3s ease-in-out;
+}
+.blur:hover img {
+    filter: blur(3px);
+}
+
+@media screen and (max-width: 767px){
+    .TopPage__works__content{
+        display: block;
+    }
+    .TopPage__works__content-img{
+        margin: 50px 0;
+    }
+    .TopPage__works__content-img img{
+        width: 200px;
+    }
+}
+
+/* TopPage-contact */
+
+.TopPage__contact{
+    background: #E2E2E2;
+    position: relative;
+    margin: 140px auto 0;
+    text-align: center;
+}
+
+.TopPage__contact__top-logo img{
+    margin: 50px 0px;
+}
+
+.contact__form{
+    width: 400px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.contact__form-content{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact__form-content input{
+    width: 400px;
+    height: 30px;
+}
+
+.contact__form-content textarea{
+    width: 400px;
+    height: 100px;
+}
+
+.submitBtn{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+    .contact__form{
+        width: 88%;
+    }
+    .contact__form-content input{
+        width: 100%;
+    }
+
+    .contact__form-content textarea{
+        width: 100%;
+    }
 }
