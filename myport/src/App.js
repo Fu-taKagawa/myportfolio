@@ -8,7 +8,6 @@ import Header from './component/header/Header';
 function App() {
   return (
     <>
-    <Header></Header>
     <Top></Top>
 
     </>

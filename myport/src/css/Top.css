@@ -70,9 +70,32 @@
     }
 
     .TopPage__top__img img{
-        width: 80%;
-        top: 110px;
+        width: 75%;
+        top: 130px;
         right: 0;
+    }
+
+    .TopPage__top__catchfrase {
+        height: 400px;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        font-size: 15px;
+        font-weight: 100;
+        font-family: 游ゴシック;
+        z-index: 10;
+        writing-mode: vertical-lr;
+        -moz-writing-mode: vertical-lr;
+        -o-writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+    }
+
+    .TopPage__top__catchfrase .text-center{
+        text-align: center;
+    }
+
+    .TopPage__top__catchfrase .text-left{
+        text-align: right;
     }
 }
 
@@ -136,6 +159,14 @@
     .TopPage__about__content-img img{
         width: 70%;
     }
+    .TopPage__about__content-textbox{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .TopPage__about__content-link{
+        top: 750px;
+    }
 }
 
 /* TopPage-works */
@@ -187,7 +218,11 @@
         margin: 50px 0;
     }
     .TopPage__works__content-img img{
-        width: 200px;
+        width: 88%;
+    }
+
+    .TopPage__works__content-link{
+        top: 550px;
     }
 }
 
