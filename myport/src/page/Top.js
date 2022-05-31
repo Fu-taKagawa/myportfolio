@@ -1,19 +1,19 @@
 import React from "react";
 import Header from "../component/header/Header";
 
-import green__bg from '../img/bg__green.svg'
-import green__bgsp from "../img/bg__green-sp.svg"
-import photo from '../img/Top-photo.png'
-import catchfrase from "../img/Top-catch.svg"
-import catchshadow from "../img/Top-catch-shadow.svg"
-import aboutlogo from "../img/About-logo.svg"
-import aboutlogosp from "../img/About-logo-sp.svg"
-import topAboutPhoto from "../img/Top-about-photo.jpg"
-import workslogo from "../img/Works-logo.svg"
-import workslogosp from "../img/Works-logo-sp.svg"
-import kitaKensetsu from "../img/Works-kita-kensetsu.jpg"
-import contactlogo from "../img/Contact-logo.svg"
-import contactlogosp from "../img/Contact-logo-sp.svg"
+import green__bg from '../img/top/bg__green.svg'
+import green__bgsp from "../img/top/bg__green-sp.svg"
+import photo from '../img/top/Top-photo.png'
+import catchfrase from "../img/top/Top-catch.svg"
+import catchshadow from "../img/top/Top-catch-shadow.svg"
+import aboutlogo from "../img/top/About-logo.svg"
+import aboutlogosp from "../img/top/About-logo-sp.svg"
+import topAboutPhoto from "../img/top/Top-about-photo.jpg"
+import workslogo from "../img/top/Works-logo.svg"
+import workslogosp from "../img/top/Works-logo-sp.svg"
+import kitaKensetsu from "../img/top/Works-kita-kensetsu.jpg"
+import contactlogo from "../img/top/Contact-logo.svg"
+import contactlogosp from "../img/top/Contact-logo-sp.svg"
 
 const Top =()=>{
     return(

@@ -165,7 +165,7 @@
     }
     
     .TopPage__about__content-link{
-        top: 750px;
+        top: 720px;
     }
 }
 
@@ -185,6 +185,7 @@
 .TopPage__works__content{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .TopPage__works__content-img{
@@ -213,6 +214,7 @@
 @media screen and (max-width: 767px){
     .TopPage__works__content{
         display: block;
+        margin: 0;
     }
     .TopPage__works__content-img{
         margin: 50px 0;

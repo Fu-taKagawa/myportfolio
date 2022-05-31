@@ -1,5 +1,5 @@
 import React from "react";
-import twitter from "../../img/twitter-logo.png"
+import twitter from "../../img/top/twitter-logo.png"
 
 const Header =()=>{
     return(
