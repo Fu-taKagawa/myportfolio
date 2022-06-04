@@ -1,26 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../component/header/Header";
+import jQuery from "jquery";
 
-import green__bg from '../img/bg__green.svg'
-import green__bgsp from "../img/bg__green-sp.svg"
-import photo from '../img/Top-photo.png'
-import catchfrase from "../img/Top-catch.svg"
-import catchshadow from "../img/Top-catch-shadow.svg"
-import aboutlogo from "../img/About-logo.svg"
-import aboutlogosp from "../img/About-logo-sp.svg"
-import topAboutPhoto from "../img/Top-about-photo.jpg"
-import workslogo from "../img/Works-logo.svg"
-import workslogosp from "../img/Works-logo-sp.svg"
-import kitaKensetsu from "../img/Works-kita-kensetsu.jpg"
-import contactlogo from "../img/Contact-logo.svg"
-import contactlogosp from "../img/Contact-logo-sp.svg"
+import green__bg from '../img/top/bg__green.svg'
+import green__bgsp from "../img/top/bg__green-sp.svg"
+import photo from '../img/top/Top-photo.png'
+import catchfrase from "../img/top/Top-catch.svg"
+import catchshadow from "../img/top/Top-catch-shadow.svg"
+import aboutlogo from "../img/top/About-logo.svg"
+import aboutlogosp from "../img/top/About-logo-sp.svg"
+import topAboutPhoto from "../img/top/Top-about-photo.jpg"
+import workslogo from "../img/top/Works-logo.svg"
+import workslogosp from "../img/top/Works-logo-sp.svg"
+import kitaKensetsu from "../img/top/Works-kita-kensetsu.jpg"
+import contactlogo from "../img/top/Contact-logo.svg"
+import contactlogosp from "../img/top/Contact-logo-sp.svg"
 
 const Top =()=>{
+
+    (window.onload = function() {
+
+    // フェードイン処理
+    jQuery(window).scroll(function (){
+        jQuery(".fade").each(function(){
+        var winheight = jQuery(window).height();
+        var posi = jQuery(this).offset().top;
+        var scroll = jQuery(window).scrollTop();
+        if (scroll + winheight > posi){
+            jQuery(this).addClass("fadein");
+        } else {
+            //　スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+            //jQuery(this).removeClass("fadein");
+        }
+        });
+    });
+})(); 
     return(
         <>
             <Header/>
             <div className="TopPage">
-                <section className="TopPage__top">
+                <section className="TopPage__top fade">
                     <div className="TopPage__top__bg">
                         <div className="green__bg-right-top pc-only">
                             <img src={green__bg} alt="green-background-right" />
@@ -28,7 +48,7 @@ const Top =()=>{
                         <div className="green__bg-left-top pc-only">
                             <img src={green__bg} alt="green-background-left" />
                         </div>
-                        <div className="green__bg-sp sp-only">
+                        <div className="green__bg-top-sp sp-only">
                             <img src={green__bgsp} alt="green-background-sp" />
                         </div>
                     </div>
@@ -45,7 +65,7 @@ const Top =()=>{
                         <img src={photo} alt="TopPage-photo" />
                     </div>
                 </section>
-                <section className="TopPage__about">
+                <section className="TopPage__about fade">
                     <div className="TopPage__about__top">
                         <div className="TopPage__about__top-logo pc-only">
                             <img src={aboutlogo} alt="TopPage-aboutLogo" />
@@ -68,14 +88,14 @@ const Top =()=>{
                                 <p className="text-normal">所在地：兵庫県伊丹市</p>
                                 <p className="text-normal">お問い合わせ：kagahaya@gmail.com</p>
                             </div>
-                            <p className="TopPage__about__content-link"><a href="">About details →</a></p>
-                            <div className="green__bg-right-about pc-only">
+                            <p className="TopPage__about__content-link"><Link to={"About"}>About details →</Link></p>
+                            <div className="green__bg-right-top-about pc-only">
                                 <img src={green__bg} alt="green-background-right" />
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="TopPage__works">
+                <section className="TopPage__works fade">
                     <div className="TopPage__works__top">
                         <div className="TopPage__works__top-logo pc-only">
                             <img src={workslogo} alt="TopPage-worksLogo" />
@@ -103,7 +123,7 @@ const Top =()=>{
                             <img src={contactlogosp} alt="TopPage-contactLogo-sp" />
                         </div>
                     </div>
-                    <div className="contact__form">
+                    <div className="contact__form fade">
                         <form action="#" method="post" >
                             <div className="contact__form-content">
                                 <label for="name" className="text-normal"> お名前</label>

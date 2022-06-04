@@ -1,0 +1,192 @@
+.About{
+    width: 88%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.About__top-logo{
+    margin-bottom: 50px;
+}
+
+.About__top-text{
+    margin-top: 50px;
+}
+
+.About__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.About__content-img{
+    margin: 0 50px;
+}
+
+.About__content-img img{
+    width: 350px;
+}
+
+.About__content-textbox{
+    text-align: left;
+    margin: 0 50px;
+}
+
+.About__content__title{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Montserrat;
+}
+
+.About__circumstance{
+    width: 70%;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.About__circumstance p{
+    line-height: 15px;
+}
+
+.green__bg-right-about{
+    position: absolute;
+    top: 800px !important;
+    right: 50px !important;
+    z-index: 0;
+}
+.green__bg-right-about img{
+    width: 400px;
+}
+
+.About__attitude{
+    width: 70%;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.About__attitude p{
+    line-height: 25px;
+}
+
+.green__bg-left-about{
+    position: absolute;
+    top: -100px;
+    left: -250px;
+    z-index: 0;
+}
+
+.green__bg-left-about img{
+    width: 400px;
+}
+
+.About__hobby{
+    position: relative;
+    width: 70%;
+    margin: 150px auto 50px;
+    text-align: left;
+}
+
+.About__hobby p{
+    line-height: 15px;
+}
+
+.About__hobby__photo{
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.About__hobby__photo img{
+    width: 470px;
+}
+
+.hobby__guitar{
+    position: absolute;
+    right: 0;
+}
+
+.hobby__bike{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+}
+
+.TopPage-link{
+    position: absolute;
+    top: 500px;
+    right: 0;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px){
+    .About__top-text{
+        text-align: left;
+    }
+
+    .About__circumstance{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    
+    .About__circumstance p{
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .About__attitude{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .About__attitude p{
+        line-height: 25px;
+        font-size: 13px;
+    }
+
+    .About__hobby{
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .About__hobby p{
+        line-height: 15px;
+        font-size: 13px;
+    }
+
+    .About__hobby__photo{
+        width: 100%;
+    }
+
+    .About__hobby__photo img{
+        width: 170px;
+    }
+
+    .hobby__bike{
+        top: 40px;
+    }
+
+    .TopPage-link{
+        top: 200px;
+    }
+
+
+    .About__content{
+        display: block;
+    }
+    .About__content-img{
+        margin: 0;
+    }
+    .About__content-img img{
+        width: 70%;
+    }
+    .About__content-textbox{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .About__content-link{
+        top: 720px;
+    }
+}

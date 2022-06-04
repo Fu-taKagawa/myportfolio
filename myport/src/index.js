@@ -5,6 +5,7 @@ import App from './App';
 
 
 import "./component/header/Header.css";
+import "./css/About.css"
 import "./css/Top.css"
 import "./component/text.css"
 

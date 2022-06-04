@@ -1,16 +1,18 @@
 import './App.css';
 import React from "react"
-import { BrowserRouter, Route ,Switch} from "react-router-dom";
+import { BrowserRouter, Routes,Route} from "react-router-dom";
 
 import Top from './page/Top';
-import Header from './component/header/Header';
+import About from './page/About';
 
 function App() {
   return (
-    <>
-    <Top></Top>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Top />} />
+        <Route exact path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
