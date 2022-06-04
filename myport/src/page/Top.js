@@ -48,7 +48,7 @@ const Top =()=>{
                         <div className="green__bg-left-top pc-only">
                             <img src={green__bg} alt="green-background-left" />
                         </div>
-                        <div className="green__bg-sp sp-only">
+                        <div className="green__bg-top-sp sp-only">
                             <img src={green__bgsp} alt="green-background-sp" />
                         </div>
                     </div>
@@ -88,8 +88,8 @@ const Top =()=>{
                                 <p className="text-normal">所在地：兵庫県伊丹市</p>
                                 <p className="text-normal">お問い合わせ：kagahaya@gmail.com</p>
                             </div>
-                            <p className="TopPage__about__content-link"><a href="">About details →</a></p>
-                            <div className="green__bg-right-about pc-only">
+                            <p className="TopPage__about__content-link"><Link to={"About"}>About details →</Link></p>
+                            <div className="green__bg-right-top-about pc-only">
                                 <img src={green__bg} alt="green-background-right" />
                             </div>
                         </div>

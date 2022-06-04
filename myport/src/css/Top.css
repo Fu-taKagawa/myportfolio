@@ -25,18 +25,18 @@
 .green__bg-left-top{
     position: absolute;
     left: 5%;
-    top: 300px;
+    top: 370px;
     z-index: 0;
 }
 .green__bg-left-top img{
-    width: 500px;
+    width: 400px;
 }
 
 .TopPage__top__catchfrase .catch-frase{
     width: 550px;
     position: absolute;
     z-index: 5;
-    top: 280px;
+    top: 220px;
     left: 13%;
 }
 
@@ -44,7 +44,7 @@
     width: 550px;
     position: absolute;
     z-index: 0;
-    top: 287px;
+    top: 227px;
     left: 12.5%;
 }
 
@@ -64,7 +64,7 @@
         margin-bottom: 50px;
     }
 
-    .green__bg-sp{
+    .green__bg-top-sp{
         position: absolute;
         top: 280px;
     }
@@ -139,13 +139,13 @@
     right: 15%;
 }
 
-.green__bg-right-about{
+.green__bg-right-top-about{
     position: absolute;
     right: 0;
     z-index: 0;
     top: 500px;
 }
-.green__bg-right-about img{
+.green__bg-right-top-about img{
     width: 400px;
 }
 
@@ -224,7 +224,7 @@
     }
 
     .TopPage__works__content-link{
-        top: 550px;
+        top: 570px;
     }
 }
 
