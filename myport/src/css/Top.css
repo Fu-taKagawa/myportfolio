@@ -52,7 +52,7 @@
     width: 25%;
     position: absolute;
     z-index: 5;
-    top: 15%;
+    top: 10%;
     right: 15%;
 }
 
@@ -71,15 +71,15 @@
 
     .TopPage__top__img img{
         width: 75%;
-        top: 130px;
+        top: 20px;
         right: 0;
     }
 
     .TopPage__top__catchfrase {
         height: 400px;
         position: absolute;
-        top: 200px;
-        left: 50px;
+        top: 50px;
+        left: 30px;
         font-size: 15px;
         font-weight: 100;
         font-family: 游ゴシック;
@@ -278,5 +278,29 @@
 
     .contact__form-content textarea{
         width: 100%;
+    }
+}
+
+.fade {
+    transition: all 2000ms;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0px, 50px);
+}
+
+.fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+} 
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

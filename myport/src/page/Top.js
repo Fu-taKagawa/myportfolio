@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../component/header/Header";
+import jQuery from "jquery";
 
 import green__bg from '../img/top/bg__green.svg'
 import green__bgsp from "../img/top/bg__green-sp.svg"
@@ -16,11 +18,29 @@ import contactlogo from "../img/top/Contact-logo.svg"
 import contactlogosp from "../img/top/Contact-logo-sp.svg"
 
 const Top =()=>{
+
+    (window.onload = function() {
+
+    // フェードイン処理
+    jQuery(window).scroll(function (){
+        jQuery(".fade").each(function(){
+        var winheight = jQuery(window).height();
+        var posi = jQuery(this).offset().top;
+        var scroll = jQuery(window).scrollTop();
+        if (scroll + winheight > posi){
+            jQuery(this).addClass("fadein");
+        } else {
+            //　スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+            //jQuery(this).removeClass("fadein");
+        }
+        });
+    });
+})(); 
     return(
         <>
             <Header/>
             <div className="TopPage">
-                <section className="TopPage__top">
+                <section className="TopPage__top fade">
                     <div className="TopPage__top__bg">
                         <div className="green__bg-right-top pc-only">
                             <img src={green__bg} alt="green-background-right" />
@@ -45,7 +65,7 @@ const Top =()=>{
                         <img src={photo} alt="TopPage-photo" />
                     </div>
                 </section>
-                <section className="TopPage__about">
+                <section className="TopPage__about fade">
                     <div className="TopPage__about__top">
                         <div className="TopPage__about__top-logo pc-only">
                             <img src={aboutlogo} alt="TopPage-aboutLogo" />
@@ -75,7 +95,7 @@ const Top =()=>{
                         </div>
                     </div>
                 </section>
-                <section className="TopPage__works">
+                <section className="TopPage__works fade">
                     <div className="TopPage__works__top">
                         <div className="TopPage__works__top-logo pc-only">
                             <img src={workslogo} alt="TopPage-worksLogo" />
@@ -103,7 +123,7 @@ const Top =()=>{
                             <img src={contactlogosp} alt="TopPage-contactLogo-sp" />
                         </div>
                     </div>
-                    <div className="contact__form">
+                    <div className="contact__form fade">
                         <form action="#" method="post" >
                             <div className="contact__form-content">
                                 <label for="name" className="text-normal"> お名前</label>
