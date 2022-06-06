@@ -3,7 +3,13 @@ import Header from "../component/header/Header";
 
 const Works=()=>{
     return(
-        <Header/>
+        <>
+            <Header/>
+            <section className="Works">
+                <div></div>
+            </section>
+        </>
+        
     )
 }
 
