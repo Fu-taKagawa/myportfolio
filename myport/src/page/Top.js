@@ -18,9 +18,7 @@ import contactlogo from "../img/top/Contact-logo.svg"
 import contactlogosp from "../img/top/Contact-logo-sp.svg"
 
 const Top =()=>{
-
     (window.onload = function() {
-
     // フェードイン処理
     jQuery(window).scroll(function (){
         jQuery(".fade").each(function(){
@@ -88,7 +86,7 @@ const Top =()=>{
                                 <p className="text-normal">所在地：兵庫県伊丹市</p>
                                 <p className="text-normal">お問い合わせ：kagahaya@gmail.com</p>
                             </div>
-                            <p className="TopPage__about__content-link"><Link to={"About"}>About details →</Link></p>
+                            <p className="TopPage__about__content-link"><Link to={"/About"}>About details →</Link></p>
                             <div className="green__bg-right-top-about pc-only">
                                 <img src={green__bg} alt="green-background-right" />
                             </div>
@@ -111,7 +109,7 @@ const Top =()=>{
                         <div className="TopPage__works__content-img blur">
                             <a href=""><img src={kitaKensetsu} alt="TopPage-worksLogo" /></a>
                         </div>
-                        <p className="TopPage__works__content-link"><a href="">Works details →</a></p>
+                        <p className="TopPage__works__content-link"><Link to={"/Works"}>Works details →</Link></p>
                     </div>
                 </section>
                 <section className="TopPage__contact" id="contact">
@@ -124,7 +122,7 @@ const Top =()=>{
                         </div>
                     </div>
                     <div className="contact__form fade">
-                        <form action="#" method="post" >
+                        <form action="" method="post" >
                             <div className="contact__form-content">
                                 <label for="name" className="text-normal"> お名前</label>
                                 <br />

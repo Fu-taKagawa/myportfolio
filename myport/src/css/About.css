@@ -167,6 +167,14 @@
         top: 40px;
     }
 
+    .hobby__bike p{
+        font-size: 10px;
+    }
+
+    .hobby__guitar p{
+        font-size: 10px;
+    }
+
     .TopPage-link{
         top: 200px;
     }
@@ -188,5 +196,24 @@
     
     .About__content-link{
         top: 720px;
+    }
+
+    .green__bg-about-right-sp{
+        position: absolute;
+        bottom: -80px;
+        right: -10px;
+    }
+
+    .green__bg-about-right-sp img{
+        width: 80%;
+    }
+
+    .green__bg-about-left-sp{
+        position: absolute;
+        top: -70px;
+    }
+
+    .green__bg-about-left-sp img{
+        width: 80%;
     }
 }

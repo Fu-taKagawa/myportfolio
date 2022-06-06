@@ -43,6 +43,9 @@ const About =()=>{
                                 <p className="text-normal">所在地：兵庫県伊丹市</p>
                                 <p className="text-normal">お問い合わせ：kagahaya@gmail.com</p>
                             </div>
+                            <div className="green__bg-about-right-sp sp-only">
+                                <img src={green__bgsp} alt="green-background-sp" />
+                            </div>
                         </div>
                         <div className="About__attitude">
                             <h3 className="About__content__title">- Attitude -</h3>
@@ -58,14 +61,17 @@ const About =()=>{
                             <div className="green__bg-left-about pc-only">
                                 <img src={green__bg} alt="green-background-left" />
                             </div>
+                            <div className="green__bg-about-left-sp sp-only">
+                                <img src={green__bgsp} alt="green-background-sp" />
+                            </div>
                             <h3 className="About__content__title">- Hobby -</h3>
                             <p>ランニング・サイクリング</p>
                             <p>アコースティックギターの演奏</p>
                             <p>球技スポーツ（バドミントン・バレー・バスケ等）</p>
                         </div>
                         <div className="About__hobby__photo">
-                            <div className="hobby__guitar"><img src={guitar} alt="guitar" /></div>
-                            <div className="hobby__bike"><img src={bike} alt="bike" /></div>
+                            <div className="hobby__guitar"><img src={guitar} alt="guitar" /><p>（※そこそこ上手いです）</p></div>
+                            <div className="hobby__bike"><img src={bike} alt="bike" /><p>（※そこそこ速度出ます）</p></div>
                             <div className="TopPage-link"><p><Link to={"../"}>Top Page →</Link></p></div>
                         </div>
                 </div>
