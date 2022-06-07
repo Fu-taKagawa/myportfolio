@@ -55,4 +55,17 @@
         justify-content: space-around;
     }
 
+    .twitter-sp{
+        margin-right: 50px;
+    }
+
+    .twitter-sp img{
+        width: 30px;
+    }
+
+    .header-top-sp{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }

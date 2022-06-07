@@ -11,14 +11,17 @@ const Header =()=>{
                     <ul className="header__contents">
                         <li><Link to={"/About"}>About</Link></li>
                         <li><Link to={"/Works"}>Works</Link></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                         <li className="twitter"><a href="https://twitter.com/WEaKknN5HncADku"><img src={twitter} alt="" /></a></li>
                     </ul>
                 </div>
             </div>
             <div className="sp-only">
                 <div className="header-sp">
-                    <h1 className="header-sp__logo"><Link to={"../"}>Logo</Link></h1>
+                    <div className="header-top-sp">
+                        <h1 className="header-sp__logo"><Link to={"../"}>Logo</Link></h1>
+                        <a href="https://twitter.com/WEaKknN5HncADku" className="twitter-sp"><img src={twitter} alt="" /></a>
+                    </div>
                     <ul className="header-sp__contents">
                         <li className="list-about"><Link to={"/About"}>About</Link ></li>
                         <li className="list-works"><Link to={"/Works"}>Works</Link></li>

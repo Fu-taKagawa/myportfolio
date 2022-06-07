@@ -13,7 +13,8 @@ import aboutlogosp from "../img/top/About-logo-sp.svg"
 import topAboutPhoto from "../img/top/Top-about-photo.jpg"
 import workslogo from "../img/top/Works-logo.svg"
 import workslogosp from "../img/top/Works-logo-sp.svg"
-import kitaKensetsu from "../img/top/Works-kita-kensetsu.jpg"
+import kitaKensetsu from "../img/works/Works-kita-kensetsu.jpg"
+import GZmedia from "../img/works/Works-GZ-media.jpg"
 import contactlogo from "../img/top/Contact-logo.svg"
 import contactlogosp from "../img/top/Contact-logo-sp.svg"
 
@@ -104,10 +105,10 @@ const Top =()=>{
                     </div>
                     <div className="TopPage__works__content">
                         <div className="TopPage__works__content-img blur">
-                            <a href=""><img src={kitaKensetsu} alt="TopPage-kita-kensetsu" /></a>
+                            <a href="https://kita-kensetsu.jp/"><img src={kitaKensetsu} alt="TopPage-kita-kensetsu" /></a>
                         </div>
                         <div className="TopPage__works__content-img blur">
-                            <a href=""><img src={kitaKensetsu} alt="TopPage-worksLogo" /></a>
+                            <a href="https://gz-media.jp/"><img src={GZmedia} alt="TopPage-GZ-media" /></a>
                         </div>
                         <p className="TopPage__works__content-link"><Link to={"/Works"}>Works details →</Link></p>
                     </div>
