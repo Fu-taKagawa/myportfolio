@@ -7,6 +7,7 @@ import App from './App';
 import "./component/header/Header.css";
 import "./css/About.css"
 import "./css/Top.css"
+import "./css/Works.css"
 import "./component/text.css"
 
 const container = document.getElementById("root");

@@ -1,0 +1,95 @@
+.Works{
+    width: 88%;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+.Works__top-logo img{
+    width: 100px;
+}
+
+.Works__list{
+    margin-top: 50px;
+}
+
+.Works__list__left{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.Works__list__img img{
+    width: 600px;
+}
+
+.Works__list__left .Works__list__textbox{
+    text-align: left;
+    margin: 50px 0 0 80px;
+}
+
+.Works__company{
+    font-weight: lighter;
+    font-family: Noto Sans JP;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #000;
+    width: fit-content;
+}
+
+.Works__company img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.Works__skill{
+    line-height: 20px;
+}
+
+.Works__list__right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.Works__list__right .Works__list__textbox{
+    text-align: left;
+    margin: 50px 80px 0 0;
+}
+
+.Works-TopPage-link{
+    position: absolute;
+    right: 100px;
+    margin: 50px 0 ;
+}
+
+@media screen and (max-width: 767px){
+    
+    .Works__list__img img{
+        width: 100%;
+    }
+    
+    .Works__list__left .Works__list__textbox{
+        text-align: left;
+        margin: 20px 0 0 0px;
+    }
+
+    .Works__list__left{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .Works__list__right{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .Works__list__right .Works__list__textbox{
+        margin: 20px 0 0 0;
+    }
+
+    .Works-TopPage-link{
+        margin: 0;
+        right: 20px;
+    }
+}

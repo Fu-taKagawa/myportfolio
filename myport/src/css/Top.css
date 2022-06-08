@@ -112,6 +112,10 @@
     margin-bottom: 50px;
 }
 
+.TopPage__about__top-logo img{
+    width: 100px;
+}
+
 .TopPage__about__content{
     display: flex;
     align-items: center;
@@ -182,6 +186,10 @@
     margin-bottom: 50px;
 }
 
+.TopPage__works__top-logo img{
+    width: 100px;
+}
+
 .TopPage__works__content{
     display: flex;
     justify-content: center;
@@ -237,8 +245,10 @@
     text-align: center;
 }
 
+
 .TopPage__contact__top-logo img{
     margin: 50px 0px;
+    width: 100px;
 }
 
 .contact__form{

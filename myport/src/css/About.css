@@ -8,6 +8,10 @@
     margin-bottom: 50px;
 }
 
+.About__top-logo img{
+    width: 100px;
+}
+
 .About__top-text{
     margin-top: 50px;
 }
