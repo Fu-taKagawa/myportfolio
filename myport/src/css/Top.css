@@ -1,5 +1,7 @@
 /* TopPage-top */
-
+html{
+    scroll-behavior: smooth;
+}
 .TopPage__top{
     background-color: #E2E2E2;
     padding: 50px 0px;
