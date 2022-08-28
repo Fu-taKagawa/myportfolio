@@ -13,7 +13,7 @@ const Header =()=>{
                         <li><Link to={"/About"}>About</Link></li>
                         <li><Link to={"/Works"}>Works</Link></li>
                         <li><a href="/#contact">Contact</a></li>
-                        <li className="twitter"><a href="https://twitter.com/WEaKknN5HncADku"><img src={twitter} alt="" /></a></li>
+                        <li className="twitter"><a href="https://twitter.com/fuutaEngineer14"><img src={twitter} alt="" /></a></li>
                     </ul>
                 </div>
             </div>

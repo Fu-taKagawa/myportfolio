@@ -34,7 +34,7 @@ const Top =()=>{
         }
         });
     });
-})(); 
+})();
     return(
         <>
             <Header/>
